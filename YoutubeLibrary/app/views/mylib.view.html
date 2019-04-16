@@ -1,0 +1,36 @@
+<div class="pan1">
+	<h1>{{library.name}}'s Library</h1>
+	<button class="btn add" data-ng-click="more=true">
+		<i class="fas fa-plus-square"></i>
+	</button>
+
+	<li data-ng-repeat="video in library.videos" class="lib_video">
+		<span>
+			<button class="delete_video btn" data-ng-click="deleteVideo(video)">
+				<i class="fas fa-trash-alt fa-lg"></i>
+			</button>
+		</span>
+		<ul data-ng-click="playVideo(video)" class="video_title">{{video.title}}</ul>
+	</li>
+</div>
+
+<div class="pan2">
+	<div data-ng-show="videoPlaying">
+		<p>{{currentVideoTitle}}</p>
+        <iframe width="560" height="315" data-ng-src="{{currentVideo}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div data-ng-show="more">
+    	<input type="search" class="form-control" data-ng-model="vidsearch">
+    	<button class="btn btn-success search" data-ng-click="searchNew(vidsearch)">Search</button>
+    	<div data-ng-repeat="video in items">
+    		<li class="new_lib">
+    			<span>
+    				<button  data-ng-click="addVideo(video)" class="btn add_video">
+    					<i class="fas fa-plus-square"></i>
+    				</button>
+    			</span>
+    			<ul class="new_video">{{video.snippet.title}}</ul>
+    		</li>
+    	</div>
+    </div>
+</div>

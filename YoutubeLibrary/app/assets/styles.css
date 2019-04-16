@@ -1,0 +1,63 @@
+h1 {
+	text-align: center;
+}
+
+.pan1 {
+	width: 30%;
+	margin-top: 10%;
+	height: 440px;
+}
+
+.add {
+	margin-left: 43%;
+	background-color: #f95536!important;
+}
+
+.delete_video {
+	position: absolute;
+	width: 5%;
+	height: 7.65%;
+	background-color: #f95536!important;
+}
+
+.video_title {
+	margin-left: 12%;
+	cursor: pointer;
+}
+
+.lib_video {
+	background-color: rgba(248, 196, 113, .7);
+	height: 72px;
+	margin-top: 4%;
+}
+
+.pan2 {
+	width: 45%;
+	height: 185px;
+	margin-left: 42%;
+	margin-top: -22.9%;
+}
+
+.form-control {
+	width: 50%!important;
+}
+
+.search {
+	float: right;
+	margin-right: 37%;
+	margin-top: -4.5%;
+}
+
+.new_lib {
+	background-color: rgba(248, 196, 113, .7);
+	list-style: none;
+	height: 72px;
+	margin-top: 4%;
+}
+
+.add_video {
+	background-color: #f95536!important;
+	position: absolute;
+	height: 7.65%;
+	width: 2%;
+}
